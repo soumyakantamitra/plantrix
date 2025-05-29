@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1vw;
+}
+
+body {
+
+  font-family: Inter, serif;
+}
+
+.app {
+  position: relative;
+}
+
+nav {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav h2 {
+  font-family: 'Kaushan Script', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #5F825C;
+}
+
+header {
+  margin: 2rem 10rem;
+  overflow: hidden;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .heading-line-1 {
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 6.5rem;
+  font-weight: 600;
+  animation: slide-up 0.85s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header .heading-line-2 {
+  display: flex;
+  gap: 2rem;
+}
+
+.heading-line-2 img {
+  width: 20rem;
+  border-radius: 5px;
+}
+
+.heading-line-2 div {
+  height: 8rem;
+  overflow: hidden;
+}
+
+header .abstract {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  animation: slide-up 0.85s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.abstract a {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #5F825C;
+  }
+}
+
+.about-us , .features-section{
+  margin: 8rem 10rem;
+}
+
+.about-us h4, .features-section h4{
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.about-us h2{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.about-us .green {
+  color: #5F825C;
+}
+
+.features-section h3 {
+  font-size: 2.5rem;
+}
+
+
+.features-section .features-heading {
+  margin-top: 5rem;
+}
+
+.features-section .features {
+  margin: 2rem 8rem;
+}
+
+.features .grey {
+  color: #A9A9A9;
+}
+
+.features .feature {
+  margin: 2rem 0;
+}
+
+.features .feature div {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #6F6C6C;
+}
+
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 51rem;
+  overflow: hidden;
+}
+
+.showcase .carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.showcase .carousel-image.active {
+  opacity: 1;
+}
+
+
+.results-page {
+  margin: 8rem 10rem;
+}
+
+.results-page h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.results-page form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.results-page label{
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.results-page input {
+  margin-top: 1rem;
+  font-family: Inter, serif;
+  font-size: 1.2rem;
+  width: 30rem;
+  padding: 0.8rem;
+  border: 1px solid #cedbe8;
+  border-radius: 10px;
+}
+
+form button {
+  cursor: pointer;
+  font-family: Inter, serif;
+  align-self: flex-start;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #5F825C;
+  }
+}
+
+.recommendation-list {
+  margin-top: 4rem;
+}
+
+.recommendation-item {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.recommendation-item h2 {
+  text-align: left;
+  color: #5F825C;
+}
+
+.recommendation-item p, .recommendation-item div {
+  font-size: 1.5rem;
+}
+
+footer {
+  margin: 2rem 0;
+}
+
+footer h2{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #6F6C6C;
+}
